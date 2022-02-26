@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-  </head>
-  <body>
-    <form>
-      1st Number : <input type="text" id="firstNumber" /><br />
-      2nd Number: <input type="text" id="secondNumber" /><br />
-      <input type="button" onClick="multiplyBy()" value="Multiply" />
-      <input type="button" onClick="divideBy()" value="Divide" />
-    </form>
-    <p>
-      The Result is : <br />
-      <span id="result"></span>
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="main.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <div class="row">
+
+      <div class="col-25">
+        <label for="first-input">First Value</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="num1">
+      </div>
+
+      <div class="col-25">
+        <label for="second-input">Second Value</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="num2">
+      </div>
+
+      <div class="col-25">
+        <label for="op-input">Operation</label>
+      </div>
+      <div class="col-75">
+        <button type="button" onclick="add()">ADD</button>
+        <button type="button" onclick="sub()">SUB</button>
+        <button type="button" onclick="mul()">MUL</button>
+        <button type="button" onclick="div()">DIV</button>
+      </div>
+
+      <div class="col-25">
+        <label>Result:</label>
+      </div>
+      <div class="col-75">
+        <button id="result" type="result">null</button>
+        <button type="print" onclick="window.print()">Print</button>
+      </div>
+
+    </div>
+  </form>
+</body>
+
 </html>
-
-
-
-
-        <div class="container">
-
-            <div class="calculator">
-                <div class="screen">
-                    <!-- <input type="text" placeholder="0"> -->
-                    <p class="get-action"></p>
-                    <p class="input"></p>
-                    <p class="second-input"></p>
-
-                </div>
-                <div class="keyboard">
-                    <!--row 5-->
-                    <span class="key del">DEL</span>
-
-                    <span class="key back"></span>
-                    <span class="key action tr">/</span>
-
-                    <!--row 4-->
-                    <span class="key number">7</span>
-                    <span class="key number">8</span>
-                    <span class="key number">9</span>
-                    <span class="key action">+</span>
-
-                    <!--row 3-->
-                    <span class="key number">4</span>
-                    <span class="key number">5</span>
-                    <span class="key number">6</span>
-                    <span class="key action">-</span>
-
-                    <!--row 2-->
-                    <span class="key number">1</span>
-                    <span class="key number">2</span>
-                    <span class="key number">3</span>
-                    <span class="key action">*</span>
-
-                    <!--row 1-->
-                    <span class="key bl number">0</span>
-                    <span class="key number">.</span>
-
-                    <span class="key total">=</span>
-                </div>
-            </div>
-        </div>
-    </section>
