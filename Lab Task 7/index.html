@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>191118 Moin ud din</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <form
+      name="registrationForm"
+      onsubmit="formValidation()"
+      action=""
+      method="post"
+    >
+      <h1>Registration Form</h1>
+
+      <div class="row">
+        <label for="userId">User id [5 to 7 characters] : </label>
+        <input type="text" name="userid" size="20" />
+        <div class="error" id="nameErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="userPass">Password [7 to 12 characters] : </label>
+        <input type="password" name="passid" size="20" />
+        <div class="error" id="nameErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="name">Name [Alphabetic characters] : </label>
+        <input type="text" name="name" size="50" />
+        <div class="error" id="emailErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="address">Address [Alphanumeric characters] : </label>
+        <input type="text" name="address" size="50" />
+        <div class="error" id="mobileErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="country">Country [Must select a country] : </label>
+        <select name="country">
+          <option selected="" value="Default">(Please select a country)</option>
+          <option value="PK">Pakistan</option>
+          <option value="TK">Turkey</option>
+          <option value="CD">Canada</option>
+          <option value="UK">UK</option>
+          <option value="US">USA</option>
+        </select>
+        <div class="error" id="mobileErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="zip">ZIP Code [Alphabetic characters] : </label>
+        <input type="text" name="zip" />
+        <div class="error" id="mobileErr"></div>
+      </div>
+
+      <div class="row">
+        <label for="email">Email [Valid email] : </label>
+        <input type="text" name="email" size="50" />
+        <div class="error" id="mobileErr"></div>
+      </div>
+
+      <div class="row">
+        <label id="sex">Sex [Select Male or Female] : </label>
+        <div class="form-inline">
+          <input type="radio" name="sex" value="male" /><span>Male</span>
+          <input type="radio" name="sex" value="female" /><span>Female</span>
+        </div>
+        <div class="error" id="genderErr"></div>
+      </div>
+
+      <div class="row">
+        <label>Language [Optional] : </label>
+        <div class="form-inline">
+          <input type="checkbox" name="en" value="en" checked /><span
+            >English</span
+          >
+          <input type="checkbox" name="nonen" value="noen" /><span
+            >Non English</span
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <label>About [Optional] : </label>
+        <textarea name="about" id="about"></textarea>
+      </div>
+
+      <div class="button">
+        <button onclick="formValidation()">Submit</button>
+      </div>
+    </form>
+
+    <script src="validator.js"></script>
+  </body>
+</html>
