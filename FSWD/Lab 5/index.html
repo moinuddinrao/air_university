@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <script>
+        function string(){
+            var char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            var lenstr = 7;
+            var rig = "";
+            for(var i = 0; i< lenstr; i++){
+                var num = Math.floor(Math.random()*char.length);
+                rig += char.substring(num, num + 1);
+            }
+            document.getElementById("ran").innerHTML = rig;
+        }
+    </script>
+</head>
+<body>
+    <!-- <script>
+        // function func(){
+            // var a = confirm("BOM");
+            // if (a==true){
+            //     alert("Done");
+            // }
+            // else {
+            //     alert("Not done");
+            // }
+        // }
+
+        // function func(){
+        //     setTimeout(()=>{alert("Hello")},2000);
+        // }
+
+        // document.writeln("<br/> navigator appCodeName "+navigator.appCodeName);
+        // document.writeln("<br/> navigator appName "+navigator.appName);
+        // document.writeln("<br/> navigator appVersion "+navigator.appVersion);
+        // document.writeln("<br/> navigator cookieEnabled "+navigator.cookieEnabled);
+        // document.writeln("<br/> navigator geolocation "+navigator.geolocation);
+        // document.writeln("<br/> navigator language "+navigator.language);
+        // document.writeln("<br/> navigator onLine "+navigator.onLine);
+        // document.writeln("<br/> navigator platform "+navigator.platform);
+        // document.writeln("<br/> navigator product "+navigator.product);
+        // document.writeln("<br/> navigator userAgent "+navigator.userAgent);
+    </script> -->
+    <!-- /<input type="button" value="something" onclick="func()"> -->
+
+    <h2>Alphabet Generation</h2>
+    <form action="#">
+        <input type="button" >
+    </form>
+
+
+
+
+
+
+</body>
+</html>
