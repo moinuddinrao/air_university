@@ -1,0 +1,12 @@
+[submodule "FSWD"]
+	path = FSWD
+	url = https://github.com/moinuddinrao/FSWD.git
+[submodule "DIP"]
+	path = DIP
+	url = https://github.com/moinuddinrao/DIP.git
+[submodule "AI"]
+	path = AI
+	url = https://github.com/moinuddinrao/AI.git
+[submodule "DS-Lab"]
+	path = DS-Lab
+	url = https://github.com/moinuddinrao/Data-Science-Lab.git
