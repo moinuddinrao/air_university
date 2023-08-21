@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="main.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <div class="row">
+
+      <div class="col-25">
+        <label for="first-input">First Value</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="num1">
+      </div>
+
+      <div class="col-25">
+        <label for="second-input">Second Value</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="num2">
+      </div>
+
+      <div class="col-25">
+        <label for="op-input">Operation</label>
+      </div>
+      <div class="col-75">
+        <button type="button" onclick="add()">ADD</button>
+        <button type="button" onclick="sub()">SUB</button>
+        <button type="button" onclick="mul()">MUL</button>
+        <button type="button" onclick="div()">DIV</button>
+      </div>
+
+      <div class="col-25">
+        <label>Result:</label>
+      </div>
+      <div class="col-75">
+        <button id="result" type="result">null</button>
+        <button type="print" onclick="window.print()">Print</button>
+      </div>
+
+    </div>
+  </form>
+</body>
+
+</html>

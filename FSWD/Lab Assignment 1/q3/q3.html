@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="validator.js"></script>
+    <title>191118 Moin ud din</title>
+  </head>
+
+  <body>
+    <form name="form1" action="#">
+      <div class="container">
+        <div class="column">
+          <h1>Billing Address</h1>
+
+          <div class="row">
+            <p>Full Name</p>
+            <input type="text" name="fullname" placeholder="Full Name" />
+          </div>
+
+          <div class="row">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Email" />
+          </div>
+
+          <div class="row">
+            <p>Address</p>
+            <input type="text" name="address" placeholder="Address" />
+          </div>
+
+          <div class="row">
+            <p>City</p>
+            <input type="text" name="city" placeholder="City"/>
+          </div>
+        </div>
+
+        <div class="column">
+          <h1>Payment</h1>
+          <div class="row">
+            <p>CNIC</p>
+            <input
+              type="text"
+              name="cnic"
+              max="13"
+              placeholder="12345-1234567-5"
+            />
+          </div>
+
+          <div class="row">
+            <p>Name on Card</p>
+            <input
+              type="text"
+              name="noc"
+              placeholder="Card Name"
+            />
+          </div>
+
+          <div class="row">
+            <p>Credit card Number</p>
+            <input
+              type="text"
+              name="ccn"
+              placeholder="1111-2222-3333-4444"
+            />
+          </div>
+
+          <div class="row">
+            <p>Exp Month</p>
+            <input type="text" name="expiry" placeholder="Expiry Month" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="inline-row">
+          <p class="bottom-text">State</p>
+          <input type="text" class="bottom-input" placeholder="State" />
+        </div>
+        <div class="inline-row">
+          <p class="bottom-text">Zip</p>
+          <input
+            type="text"
+            class="bottom-input"
+            placeholder="Zip"
+            pattern="^\d*$"
+          />
+        </div>
+        <div class="inline-row">
+          <p class="bottom-text">Exp Year</p>
+          <input
+            type="text"
+            class="bottom-input"
+            placeholder="Exp Year"
+            pattern="^\d{4}"
+          />
+        </div>
+        <div class="inline-row">
+          <p class="bottom-text">CVV</p>
+          <input
+            type="text"
+            class="bottom-input"
+            placeholder="CVV"
+            pattern="^\d{4}"
+          />
+        </div>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="Address" id="address" />
+        <label for="address">Shipping address same as billing</label>
+      </div>
+
+      <button onclick="inputValidate()">Continue to checkout</button>
+    </form>
+  </body>
+</html>

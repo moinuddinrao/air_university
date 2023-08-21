@@ -1,0 +1,79 @@
+body {
+  margin: 100px 25%;
+}
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
+}
+
+input:valid {
+  color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.column{
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.bottom-row {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.inline-row {
+  flex: 10%;
+}
+
+.bottom-input {
+  width: 60%;
+}
+
+.bottom-text {
+  width: 40%;
+  margin-bottom: 2px;
+}
+
+p {
+  margin-bottom: 2px;
+}
+
+.check {
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+}
+
+button {
+  width: 95%;
+  height: 50px;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+  }
